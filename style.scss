@@ -1,0 +1,81 @@
+// Importando fonte externa
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
+
+
+// Definição de variáveis, uma forma de armazenar informações que você deseja reutilizar em toda a sua folha de estilo
+$cor-primaria:rgb(235, 62, 194);
+$cor-secundaria: gold;
+$fonte-titulo: "Grey Qo", cursive;
+$fonte-texto: "Playfair Display", serif;
+$cor-fundo-footer: black;
+$cor-texto-footer: aliceblue;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 95vh;
+
+    p {
+        font-family: $fonte-texto;
+    }
+}
+
+h1 {
+    color: $cor-primaria;
+    text-align: center;
+    font-family: $fonte-titulo;
+    font-size: 10px;
+}
+
+h2 {
+    color: $cor-secundaria;
+}
+
+section {
+    margin: 10px;
+    padding-left: 20px;
+}
+
+.rgb {
+    border: solid tomato;
+
+    .vermelho {
+        color: rgb(255, 0, 0);
+    }
+
+    .verde {
+        color: rgb(0, 255, 0);
+    }
+
+    .azul {
+        color: rgb(0, 0, 255);
+    }
+}
+
+//Nesting 
+.rgba {
+    border: purple solid;
+
+    p {
+        color: rgba(0, 0, 255, 0.2);
+    }
+}
+
+.hexa {
+    border: red solid;
+
+    p {
+        background-color: #00ff00;
+    }
+}
+
+footer {
+    background-color: $cor-fundo-footer;
+    color: $cor-texto-footer;
+    padding: 15px;
+    text-align: center;
+}
